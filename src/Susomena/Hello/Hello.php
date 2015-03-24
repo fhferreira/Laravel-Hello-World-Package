@@ -17,14 +17,26 @@ class Hello {
 	 */
 	public function world()
 	{
-		return "Hello, world!";
+		return $this->say('world');	
 	}
 
 	/**
+	 * @param string $value
+	 *
+	 * @return string
+	 */
+	public function say($value)
+	{
+		return "Hello, {$value}!";
+	}
+
+	/**
+	 * @param string $method
+	 *
 	 * @return string
 	 */
 	public function __call($method)
 	{
-		return "Hello, {$method}";	
+		return $this->say($method);	
 	}
 }
