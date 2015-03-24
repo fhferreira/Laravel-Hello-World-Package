@@ -12,7 +12,7 @@ And then, after updating composer, add the HelloServiceProvider to your config/a
 Now you can say ello to the world with:
 
 ```php
-Hello::world();
-Hello::Jesus();
-Hello::say('My Name');
+Hello::world(); // Hello, world!
+Hello::Jesus(); // Hello, Jesus
+Hello::say('My Name'); // Heisenberg
 ```
