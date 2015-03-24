@@ -13,6 +13,6 @@ Now you can say ello to the world with:
 
 ```php
 Hello::world(); // Hello, world!
-Hello::Jesus(); // Hello, Jesus
+Hello::Jesus(); // Hello, Jesus!
 Hello::say('My Name'); // Heisenberg
 ```
