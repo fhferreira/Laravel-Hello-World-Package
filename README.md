@@ -11,5 +11,7 @@ And then, after updating composer, add the HelloServiceProvider to your config/a
 
 Now you can say ello to the world with:
 
-    Hello::world();
-
+```php
+Hello::world();
+Hello::Jesus();
+```

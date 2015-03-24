@@ -11,7 +11,20 @@ namespace Susomena\Hello;
 
 
 class Hello {
-	public static function world(){
+	
+	/**
+	 * @return string
+	 */
+	public function world()
+	{
 		return "Hello, world!";
+	}
+
+	/**
+	 * @return string
+	 */
+	public function __call($method)
+	{
+		return "Hello, {$method}";	
 	}
 }
