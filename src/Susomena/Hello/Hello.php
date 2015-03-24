@@ -27,7 +27,11 @@ class Hello {
 	 */
 	public function say($value)
 	{
-		return "Hello, {$value}!";
+		if(strtolower($value) == 'my name'):
+			return 'Heisenberg';
+		else:
+			return "Hello, {$value}!";
+		endif;
 	}
 
 	/**
